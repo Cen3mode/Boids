@@ -1,3 +1,5 @@
+let range = 20;
+
 class Flock
 {
     constructor(_pos = new p5.Vector(), _vel = new p5.Vector(), _acc = new p5.Vector())
@@ -5,6 +7,14 @@ class Flock
         this.pos = _pos;
         this.vel = _vel;
         this.acc = _acc;
+    }
+
+    inRange(otherFlock)
+    {
+        if (this.pos.dist(otherFlock.pos))
+        {
+            let separation = new p5.Vector().sub(otherFlock.pos, this.pos);
+        }
     }
 
     update()
