@@ -11,6 +11,8 @@ function setup()
 {
     createCanvas(windowWidth, windowHeight);
 
+    textSize(22);
+
     let showCG = createCheckbox("Show CG", false);
     let showSF = createCheckbox("Show separetion force", false);
     let showAF = createCheckbox("Show alignment force", false);
@@ -40,4 +42,5 @@ function draw()
         flock.update();
         flock.draw();
     });
+    text(frameRate(), 3, 22);
 }
