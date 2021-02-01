@@ -1,6 +1,6 @@
 let flocks = [];
 
-let flockCount = 50;
+let flockCount = 500;
 
 let showCG;
 let showSF;
@@ -9,7 +9,7 @@ let showCF;
 
 function setup()
 {
-    createCanvas(400, 400);
+    createCanvas(windowWidth, windowHeight);
 
     let showCG = createCheckbox("Show CG", false);
     let showSF = createCheckbox("Show separetion force", false);
